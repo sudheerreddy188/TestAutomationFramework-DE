@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Production-Suite1]">
+  <listeners>
+    <listener class-name="coreComponents.TestngToolBox"/>
+    <listener class-name="resources.ExtentReportNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="prod-selenium-tcs(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Extent"/>
+        <include name="Extent"/>
+        <exclude name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="prodTests.ProdCustomsModule">
+        <methods>
+          <include name="setUpBrowser"/>
+          <include name="beforeTestMethod"/>
+          <include name="failTest" invocation-numbers="0"/>
+          <include name="initializeRunEssentials"/>
+          <include name="tearDown"/>
+          <include name="skipTest"/>
+        </methods>
+      </class> <!-- prodTests.ProdCustomsModule -->
+    </classes>
+  </test> <!-- prod-selenium-tcs(failed) -->
+</suite> <!-- Failed suite [Production-Suite1] -->

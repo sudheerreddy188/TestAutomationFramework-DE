@@ -1,0 +1,12 @@
+2021-01-21 15:05:08,638 [main] [INFO ] prodTests.ProdCustomsModule:111:ProdCustomsModule.java - Navigated to homepage!
+2021-01-21 15:05:08,838 [main] [INFO ] prodTests.ProdCustomsModule:113:ProdCustomsModule.java - Performed search with Cedric 36
+2021-01-21 15:05:10,009 [main] [INFO ] prodTests.ProdCustomsModule:111:ProdCustomsModule.java - Navigated to homepage!
+2021-01-21 15:05:10,173 [main] [INFO ] prodTests.ProdCustomsModule:113:ProdCustomsModule.java - Performed search with Anne 37
+2021-01-21 15:06:13,491 [main] [INFO ] prodTests.ProdCustomsModule:111:ProdCustomsModule.java - Navigated to homepage!
+2021-01-21 15:06:13,748 [main] [INFO ] prodTests.ProdCustomsModule:113:ProdCustomsModule.java - Performed search with Cedric 36
+2021-01-21 15:06:14,793 [main] [INFO ] prodTests.ProdCustomsModule:111:ProdCustomsModule.java - Navigated to homepage!
+2021-01-21 15:06:14,957 [main] [INFO ] prodTests.ProdCustomsModule:113:ProdCustomsModule.java - Performed search with Anne 37
+2021-01-22 19:48:12,849 [main] [INFO ] prodTests.ProdCustomsModule:130:ProdCustomsModule.java - Navigated to homepage!
+2021-01-22 19:48:17,099 [main] [INFO ] prodTests.ProdCustomsModule:139:ProdCustomsModule.java - Navigated to ladingPage!
+2021-01-22 19:53:12,156 [main] [INFO ] prodTests.ProdCustomsModule:130:ProdCustomsModule.java - Navigated to homepage!
+2021-01-22 19:53:16,141 [main] [INFO ] prodTests.ProdCustomsModule:139:ProdCustomsModule.java - Navigated to ladingPage!

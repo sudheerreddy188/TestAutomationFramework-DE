@@ -106,4 +106,29 @@ public class CommLib {
 		return path;
 	}
 	
+	//To move old sure-fire reports to archive
+	public void moveOldSurefireRepToArchive() throws IOException {
+		String currDir = System.getProperty("user.dir");
+		String junitRepDirPath = currDir + "\\test-output\\junitreports";
+		String testngJunitDirPath = currDir + "\\target\\surefire-reports\\junitreports";
+		String destArchiveDirPath = currDir + "\\custom\\reports\\archive";
+		
+		File junitRepDir = new File(junitRepDirPath);
+		File testngJunitDir = new File(testngJunitDirPath);
+		File destArchiveDir = new File(destArchiveDirPath);
+		if (junitRepDir.exists() && junitRepDir.listFiles().length>0 && destArchiveDir.exists()){
+		    FileUtils.copyDirectory(junitRepDir, destArchiveDir);
+		    FileUtils.deleteDirectory(junitRepDir);
+		    junitRepDir.mkdir();
+		}
+		if (testngJunitDir.exists() && testngJunitDir.listFiles().length>0 && destArchiveDir.exists()){
+		    FileUtils.copyDirectory(testngJunitDir, destArchiveDir);
+		    FileUtils.deleteDirectory(testngJunitDir);
+		}
+
+		
+		
+		
+		
+	}
 }

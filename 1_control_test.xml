@@ -26,15 +26,17 @@
    <groups>
     <run>
       <exclude name="Smoke"/>
-      <include name= "Reg.*"/>
+      <include name= "Regression"/>
     </run>
    </groups>
 
     <classes>
        <class name="prodTests.ProdCustomsModule" />
+      <!-- 
        <class name="prodTests.ProdTaxModule">
        	   <parameter name ="browserName" value="ie"/>
        </class>
+       --> 
     </classes>
   </test>
 <!--  -->

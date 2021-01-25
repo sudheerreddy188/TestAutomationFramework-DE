@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="9" total="12" passed="1">
+<testng-results skipped="1" failed="1" ignored="5" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Production-Suite1" duration-ms="15317" started-at="2021-01-22T19:53:06 GMT" finished-at="2021-01-22T19:53:21 GMT">
+  <suite name="Production-Suite1" duration-ms="15486" started-at="2021-01-25T13:37:14 GMT" finished-at="2021-01-25T13:37:30 GMT">
     <groups>
-      <group name="Extent">
-        <method signature="ProdCustomsModule.failTest(org.testng.ITestContext)[pri:2, instance:prodTests.ProdCustomsModule@2f465398]" name="failTest" class="prodTests.ProdCustomsModule"/>
-        <method signature="ProdCustomsModule.passTest(org.testng.ITestContext)[pri:1, instance:prodTests.ProdCustomsModule@2f465398]" name="passTest" class="prodTests.ProdCustomsModule"/>
-        <method signature="ProdCustomsModule.skipTest()[pri:3, instance:prodTests.ProdCustomsModule@2f465398]" name="skipTest" class="prodTests.ProdCustomsModule"/>
-      </group> <!-- Extent -->
+      <group name="Regression">
+        <method signature="ProdCustomsModule.failTest(org.testng.ITestContext)[pri:2, instance:prodTests.ProdCustomsModule@313b2ea6]" name="failTest" class="prodTests.ProdCustomsModule"/>
+        <method signature="ProdCustomsModule.passTest(org.testng.ITestContext)[pri:1, instance:prodTests.ProdCustomsModule@313b2ea6]" name="passTest" class="prodTests.ProdCustomsModule"/>
+        <method signature="ProdCustomsModule.skipTest()[pri:3, instance:prodTests.ProdCustomsModule@313b2ea6]" name="skipTest" class="prodTests.ProdCustomsModule"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="prod-selenium-tcs" duration-ms="15317" started-at="2021-01-22T19:53:06 GMT" finished-at="2021-01-22T19:53:21 GMT">
+    <test name="prod-selenium-tcs" duration-ms="15486" started-at="2021-01-25T13:37:14 GMT" finished-at="2021-01-25T13:37:30 GMT">
       <class name="prodTests.ProdCustomsModule">
-        <test-method status="PASS" signature="initializeRunEssentials()[pri:0, instance:prodTests.ProdCustomsModule@2f465398]" name="initializeRunEssentials" is-config="true" duration-ms="9" started-at="2021-01-22T19:53:06 GMT" finished-at="2021-01-22T19:53:06 GMT">
+        <test-method status="PASS" signature="initializeRunEssentials()[pri:0, instance:prodTests.ProdCustomsModule@313b2ea6]" name="initializeRunEssentials" is-config="true" duration-ms="16" started-at="2021-01-25T13:37:14 GMT" finished-at="2021-01-25T13:37:14 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeRunEssentials -->
-        <test-method status="PASS" signature="setUpBrowser(java.lang.String, org.testng.ITestContext)[pri:0, instance:prodTests.ProdCustomsModule@2f465398]" name="setUpBrowser" is-config="true" duration-ms="2606" started-at="2021-01-22T19:53:06 GMT" finished-at="2021-01-22T19:53:08 GMT">
+        <test-method status="PASS" signature="setUpBrowser(java.lang.String, org.testng.ITestContext)[pri:0, instance:prodTests.ProdCustomsModule@313b2ea6]" name="setUpBrowser" is-config="true" duration-ms="2778" started-at="2021-01-25T13:37:14 GMT" finished-at="2021-01-25T13:37:17 GMT">
           <params>
             <param index="0">
               <value>
@@ -25,14 +25,25 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@12cd9150]]>
+                <![CDATA[org.testng.TestRunner@47289387]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method status="PASS" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:prodTests.ProdCustomsModule@2f465398]" name="beforeTestMethod" is-config="true" duration-ms="2" started-at="2021-01-22T19:53:08 GMT" finished-at="2021-01-22T19:53:08 GMT">
+        <test-method status="PASS" signature="passTest(org.testng.ITestContext)[pri:1, instance:prodTests.ProdCustomsModule@313b2ea6]" name="passTest" duration-ms="4910" started-at="2021-01-25T13:37:17 GMT" finished-at="2021-01-25T13:37:22 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@47289387]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passTest -->
+        <test-method status="PASS" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:prodTests.ProdCustomsModule@313b2ea6]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2021-01-25T13:37:17 GMT" finished-at="2021-01-25T13:37:17 GMT">
           <params>
             <param index="0">
               <value>
@@ -43,18 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="passTest(org.testng.ITestContext)[pri:1, instance:prodTests.ProdCustomsModule@2f465398]" name="passTest" duration-ms="4993" started-at="2021-01-22T19:53:08 GMT" finished-at="2021-01-22T19:53:13 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@12cd9150]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passTest -->
-        <test-method status="PASS" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:prodTests.ProdCustomsModule@2f465398]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2021-01-22T19:53:14 GMT" finished-at="2021-01-22T19:53:14 GMT">
+        <test-method status="PASS" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:prodTests.ProdCustomsModule@313b2ea6]" name="beforeTestMethod" is-config="true" duration-ms="1" started-at="2021-01-25T13:37:23 GMT" finished-at="2021-01-25T13:37:23 GMT">
           <params>
             <param index="0">
               <value>
@@ -65,11 +65,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method status="FAIL" signature="failTest(org.testng.ITestContext)[pri:2, instance:prodTests.ProdCustomsModule@2f465398]" name="failTest" duration-ms="2017" started-at="2021-01-22T19:53:14 GMT" finished-at="2021-01-22T19:53:16 GMT">
+        <test-method status="FAIL" signature="failTest(org.testng.ITestContext)[pri:2, instance:prodTests.ProdCustomsModule@313b2ea6]" name="failTest" duration-ms="2041" started-at="2021-01-25T13:37:23 GMT" finished-at="2021-01-25T13:37:25 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@12cd9150]]>
+                <![CDATA[org.testng.TestRunner@47289387]]>
               </value>
             </param>
           </params>
@@ -124,7 +124,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failTest -->
-        <test-method status="PASS" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:prodTests.ProdCustomsModule@2f465398]" name="beforeTestMethod" is-config="true" duration-ms="1" started-at="2021-01-22T19:53:16 GMT" finished-at="2021-01-22T19:53:16 GMT">
+        <test-method status="PASS" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:prodTests.ProdCustomsModule@313b2ea6]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2021-01-25T13:37:25 GMT" finished-at="2021-01-25T13:37:25 GMT">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method status="SKIP" signature="skipTest()[pri:3, instance:prodTests.ProdCustomsModule@2f465398]" name="skipTest" duration-ms="0" started-at="2021-01-22T19:53:16 GMT" finished-at="2021-01-22T19:53:16 GMT">
+        <test-method status="SKIP" signature="skipTest()[pri:3, instance:prodTests.ProdCustomsModule@313b2ea6]" name="skipTest" duration-ms="0" started-at="2021-01-25T13:37:25 GMT" finished-at="2021-01-25T13:37:25 GMT">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping skipTest!!]]>
@@ -181,7 +181,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skipTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:prodTests.ProdCustomsModule@2f465398]" name="tearDown" is-config="true" duration-ms="4716" started-at="2021-01-22T19:53:16 GMT" finished-at="2021-01-22T19:53:21 GMT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:prodTests.ProdCustomsModule@313b2ea6]" name="tearDown" is-config="true" duration-ms="4787" started-at="2021-01-25T13:37:25 GMT" finished-at="2021-01-25T13:37:30 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -9,8 +9,8 @@
     <parameter name="browserName" value="chrome"/>
     <groups>
       <run>
-        <include name="Extent"/>
-        <include name="Extent"/>
+        <include name="Regression"/>
+        <include name="Regression"/>
         <exclude name="Smoke"/>
       </run>
     </groups>

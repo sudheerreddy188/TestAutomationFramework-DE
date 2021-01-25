@@ -37,6 +37,8 @@ implements IExecutionListener,ISuiteListener,ITestListener,ITestResult {
 		currGlobReportFoldPath= createReportFoldCurrDateTime();
 		try {loadConfigFile();} catch (IOException e) {e.printStackTrace();}
 		setLog4j2();
+		try { moveOldSurefireRepToArchive(); } catch (IOException e) {e.printStackTrace();}
+		
 	}
 
 

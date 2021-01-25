@@ -83,7 +83,7 @@ public class ProdCustomsModule extends WebDriverFactory{
 	    //System.out.println(Thread.currentThread().getId());
 	}
 	
-	@Test(groups={"Regression"}, invocationCount = 1)
+	@Test(groups={"other"}, invocationCount = 1)
 	public void prodCustSelTc2() throws InterruptedException { 
 	    loc_driver.get().get("https://www.amazon.co.uk/");
 	    //loc_driver.get().findElement(By.id("dlfsjiwejlj")).click();
@@ -111,7 +111,7 @@ public class ProdCustomsModule extends WebDriverFactory{
 	 
 	//This test method declares that its data should be supplied by the Data Provider
 	//named "test1"
-	@Test(dataProvider = "test1", groups={"Regression"})
+	@Test(dataProvider = "test1", groups={"other"})
 	public void prodCustverifyDataTc(String n1, Integer n2) {
 	 loc_driver.get().get("https://www.google.com/");
 	 HomePage hP = new HomePage( loc_driver.get());
@@ -124,7 +124,7 @@ public class ProdCustomsModule extends WebDriverFactory{
 
 	
 	
-	@Test(priority=1,groups="Extent")
+	@Test(priority=1,groups="Regression")
 	public void passTest(ITestContext iTesCon) throws Exception {
 		loc_driver.get().get("https://www.github.com/");
 		log.info("Navigated to homepage!");
@@ -133,7 +133,7 @@ public class ProdCustomsModule extends WebDriverFactory{
 		assertEquals(true, true);
 	}
 	
-	@Test(priority=2,groups="Extent")
+	@Test(priority=2,groups="Regression")
 	public void failTest(ITestContext iTesCon) throws Exception {
 		loc_driver.get().get("https://google.com/");
 		log.info("Navigated to ladingPage!");
@@ -143,7 +143,7 @@ public class ProdCustomsModule extends WebDriverFactory{
 	}
 
 	
-	@Test(priority=3,groups="Extent")
+	@Test(priority=3,groups="Regression")
 	public void skipTest() {
 		System.out.println("skipTest!!");
 		throw new SkipException("Skipping skipTest!!");
